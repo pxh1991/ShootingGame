@@ -18,20 +18,22 @@ namespace Shooting.Content
         protected const string turnRight = "turnRight";
         protected const string turnLeft = "turnLeft";
 
-        public static int idleCode = idle.GetHashCode();
-        public static int attackCode = attack.GetHashCode();
-        public static int moveLeftCode = moveLeft.GetHashCode();
-        public static int moveRightCode = moveRight.GetHashCode();
-        public static int hurtCode = hurt.GetHashCode();
-        public static int moveForwardCode = moveForward.GetHashCode();
-        public static int moveBackCode = moveBack.GetHashCode();
-        public static int turnRightCode = turnRight.GetHashCode();
-        public static int turnLeftCode = turnLeft.GetHashCode();
+        public static int idleCode = Animator.StringToHash(idle);
+        public static int attackCode = Animator.StringToHash(attack);
+        public static int moveLeftCode = Animator.StringToHash(moveLeft);
+        public static int moveRightCode = Animator.StringToHash(moveRight);
+        public static int hurtCode = Animator.StringToHash(hurt);
+        public static int moveForwardCode = Animator.StringToHash(moveForward);
+        public static int moveBackCode = Animator.StringToHash(moveBack);
+        public static int turnRightCode = Animator.StringToHash(turnRight);
+        public static int turnLeftCode = Animator.StringToHash(turnLeft);
 
         private void Awake() 
         {
             m_animator = GetComponentInChildren<Animator>();
         }
+
+        
 
         public virtual void SetAnimator(int target)
         {
@@ -41,6 +43,7 @@ namespace Shooting.Content
                 return;
             }
             m_animator.SetTrigger(target);
+            Debug.Log($"{m_animator.name} change animation state");
         }
 
         public virtual void OnAttack()

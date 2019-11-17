@@ -38,6 +38,12 @@ namespace Shooting.Content
 
         }
 
+        public void CreateAssetRondom(Action<GameObject,Character> callback)
+        {
+            var randomName = characterConfig.characterInfos[(int)UnityEngine.Random.Range(0,characterConfig.characterInfos.Count)].name;
+            CreateAsset(randomName,callback);
+        }
+
         public void CreateAsset(string name,Action<GameObject,Character> callback)
         {
             if(assetPool.TryGetValue(name,out ComponentPool<Character> pool))
