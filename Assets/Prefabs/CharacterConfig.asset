@@ -12,4 +12,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 903603b224132a8499cc56cde7458d2c, type: 3}
   m_Name: CharacterConfig
   m_EditorClassIdentifier: 
-  characterInfos: []
+  characterInfos:
+  - name: Mouse Drago Poly Art
+    characterType: 1
+    go: {fileID: 4530915342459084952, guid: c03253c8bc25d1a4ebb983132932c6b7, type: 3}
+  - name: Mouse Drago Poly Art Baby
+    characterType: 1
+    go: {fileID: 5723131755411957617, guid: dd1e4aeabcfb8df4e8a7306d2b02497d, type: 3}
+  - name: Mouse Drago Poly Art Big
+    characterType: 1
+    go: {fileID: 5830367777693995030, guid: 62211a190cbeceb4ea8a3184cdc3f634, type: 3}
+  - name: Mouse Drago Realistic
+    characterType: 1
+    go: {fileID: 892951705240502679, guid: 72a4dafd3fcc51348b5672e15d7135ec, type: 3}
+  - name: Mouse Drago Realistic Baby
+    characterType: 1
+    go: {fileID: 5648638777853241738, guid: 1ddbf0c70b6a5aa43b9c809b4c05a394, type: 3}
+  - name: Mouse Drago Realistic Big
+    characterType: 1
+    go: {fileID: 7156520145134560669, guid: 01c3c80a098843441a537ed2ebaa8d15, type: 3}
+  - name: Mouse Drago Simple
+    characterType: 1
+    go: {fileID: 2263840445377616933, guid: 6f488c9bb926c8d468022673f7eb4bff, type: 3}
+  - name: Mouse Drago Simple Baby
+    characterType: 1
+    go: {fileID: 6672593810442068044, guid: 6e08db90d018806459c338bd6e5f96ad, type: 3}
+  - name: Mouse Drago Simple Big
+    characterType: 1
+    go: {fileID: 7008480322513990887, guid: a0fee429fe9ce664bad0e308662f15b3, type: 3}
+  - name: Mouse Drago Toon
+    characterType: 1
+    go: {fileID: 5027666213217759120, guid: 88fb9659032237149b0c7f730f345883, type: 3}
+  - name: Mouse Drago Toon Baby
+    characterType: 1
+    go: {fileID: 3395369219221719251, guid: 392112ee1caa9434fb1b8edcf8948465, type: 3}
+  - name: Mouse Drago Toon Big
+    characterType: 1
+    go: {fileID: 8608056806833331323, guid: 110cde906584c3042a6158d6a1461d28, type: 3}

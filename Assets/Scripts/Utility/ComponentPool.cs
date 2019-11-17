@@ -10,7 +10,10 @@ namespace Shooting.Tool
         public List<T> usedList = new List<T>();
         public List<T> unusedList = new List<T>();
 
-
+        public void AddSeed(GameObject prefab)
+        {
+            seed = prefab;
+        }
 
         public T Get(GameObject prefab, System.Func<T> initializer = null)
         {
